@@ -42,7 +42,7 @@ workspace:
           command: |
             ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
             REPO_1_PATH=$HOME/pandas_automl
-            REPO_1_PATH=$HOME/python_command_line_app  
+            REPO_1_PATH=$HOME/python_commissions  
             if [ -d $REPO_1_PATH ]; then
               echo 'pandas jupyter notebook repo already exists - skip clone'
             else
