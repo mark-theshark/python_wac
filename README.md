@@ -1,16 +1,18 @@
-# Python-related Workspaces as code configuration
+# Python & Data Science Repo
 
-This WAC file uses Coder Technologies' Workspaces as code innovation to automate and configure-as-code the parameters of a data science-related workspace ( aka development environment )
+This repo demonstrates using a template to build a cloud developer workspace in Coder.
 
-Press the button to authenticate into a Coder instance and execute the coder.yaml
+Press the button to authenticate into a Coder deployment and execute the coder.yaml
 
-###### demo
+###### broadway.demo
+[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://broadway.demo.coder.com/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/python_wac.git&template_ref=master&template_filepath=.coder/coder.yaml)
 
-[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://demo.cdr.dev/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/python_wac.git&template_ref=master&template_filepath=.coder/coder.yaml)
+##### clean.demo
+[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://clean.demo.coder.com/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/python_wac.git&template_ref=master&template_filepath=.coder/coder.yaml)
 
-###### mark.demo
+###### demo-2
+[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://demo-2.cdr.dev/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/python_wac.git&template_ref=master&template_filepath=.coder/coder.yaml)
 
-[![Open in Coder](https://cdn.coder.com/embed-button.svg)](https://mark.demo.coder.com/wac/build?template_oauth_service=github&template_url=git@github.com:mtm20176/python_wac.git&template_ref=master&template_filepath=.coder/coder.yaml)
 
 ###### Notes / To run this app after cloning, we recommend:
 

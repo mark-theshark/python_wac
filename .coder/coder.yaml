@@ -10,7 +10,7 @@ workspace:
       cpu: 
         value: 4
       memory:
-        value: 8 
+        value: 4 
       disk:
         value: 10
       gpu-count:
