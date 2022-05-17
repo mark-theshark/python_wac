@@ -4,13 +4,13 @@ workspace:
   specs:
     kubernetes:
       image:
-        value: index.docker.io/marktmilligan/python3-pycharm:vsix
+        value: index.docker.io/marktmilligan/pycharm-jupyter-python3:latest
       container-based-vm:
         value: false
       cpu: 
         value: 4
       memory:
-        value: 4 
+        value: 8 
       disk:
         value: 10
       gpu-count:
@@ -18,24 +18,29 @@ workspace:
       labels:
         value:   
           com.coder.custom.python.version: "3.8.5"
-          com.coder.custom.pycharm.version: "2021.1.1"    
+          com.coder.custom.pycharm.version: "2022.1.1"    
           com.coder.custom.chargeback: "ds301"
   configure:
     start:
       value:
-        - name: install 1 vscode Python extension (vsix) from open vsx
+        - name: install Microsoft Python VS Code extension
           continue-on-error: true
           directory: /home/coder/
           shell: /bin/bash
-          command: SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item /var/tmp/coder/code-server/bin/code-server --install-extension ms-python.python        
-        - name: install python packages
+          command: SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item /var/tmp/coder/code-server/bin/code-server --install-extension ms-python.python 
+        - name: install Jupyter Notebook VS Code extension
+          continue-on-error: true
+          directory: /home/coder/
+          shell: /bin/bash
+          command: SERVICE_URL=https://open-vsx.org/vscode/gallery ITEM_URL=https://open-vsx.org/vscode/item /var/tmp/coder/code-server/bin/code-server --install-extension ms-toolsai.jupyter                  
+        - name: install python packages pandas and numpy
           continue-on-error: true
           directory: /home/coder/
           shell: /bin/bash
           command: |
             sudo pip3 install pandas
             sudo pip3 install numpy
-        - name: clone repo
+        - name: clone command line app and Jupyter notebook repositories
           continue-on-error: true
           directory: /home/coder/
           shell: /bin/bash
