@@ -51,10 +51,10 @@ workspace:
             if [ -d $REPO_1_PATH ]; then
               echo 'pandas jupyter notebook repo already exists - skip clone'
             else
-              git clone git@github.com:mtm20176/pandas_automl.git 
+              git clone git@github.com:mark-theshark/pandas_automl.git 
             fi
             if [ -d $REPO_2_PATH ]; then
               echo 'sales commission python command line app repo already exists - skip clone'
             else
-              git clone git@github.com:mtm20176/python_commissions.git
+              git clone git@github.com:mark-theshark/python_commissions.git
             fi                           
