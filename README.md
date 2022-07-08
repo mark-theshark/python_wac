@@ -1,11 +1,13 @@
 # Python & Data Science Repo
 
+(last updated 7/8/22)
+
 This repo demonstrates using a template to build a cloud developer workspace in Coder.
 
 Press the button to authenticate into a Coder deployment and execute the coder.yaml
 
-###### mark.coder.com
-[![Open in Coder](https://mark.coder.com/static/image/embed-button.svg)](https://mark.coder.com/wac/build?template_oauth_service=61277737-71f454b243f979e75ab79d9a&template_url=git@github.com:mtm20176/python_wac.git&template_ref=master&template_filepath=.coder/coder.yaml)
+###### v1.coder.com
+[![Open in Coder](https://v1.demo.coder.com/static/image/embed-button.svg)](https://v1.demo.coder.com/wac/build?template_oauth_service=62c8aab0-9ca998b0646312ee26ba4b89&template_url=https://github.com/mark-theshark/python_wac.git&template_ref=master&template_filepath=.coder/coder.yaml)
 
 ##### clean.demo.coder.com
 [![Open in Coder](https://clean.demo.coder.com/static/image/embed-button.svg)](https://clean.demo.coder.com/wac/build?template_oauth_service=625ff6b7-9e0fbb71f34a2ed66ae5a2e5&template_url=git@github.com:mtm20176/python_wac.git&template_ref=master&template_filepath=.coder/coder.yaml)
@@ -16,18 +18,11 @@ Press the button to authenticate into a Coder deployment and execute the coder.y
 
 ###### Notes / To run this app after cloning, we recommend:
 
+* docker.io/marktmilligan/pycharm-jupyter-python3:latest (incl. PyCharm Community Edition 2022.1.3)
 * builds a cloud container using specified compute resources
-
 * includes JetBrains PyCharm
-
 * includes Coder's code-server open-source project to run VS Code in a browser
-
-* includes JupyterHub
-
-* installs VS Code extensions for Python development
-
+* includes JupyterLab (surfaces a Notebook icon in dashboard)
+* installs VS Code extensions for Python and Jupyter Notebook development
 * clones several GitHub repositories
-
-* builds dependencies in particular Python packages
-
-
+* installs Python packages pandas and numpy
